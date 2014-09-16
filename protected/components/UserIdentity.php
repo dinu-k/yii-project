@@ -7,6 +7,7 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -21,7 +22,7 @@ class UserIdentity extends CUserIdentity
 		$username = $this->username;
 		$password = $this->password;
 		$user = Users::model()->find(array('condition'=>"username = '$username'"));
-
+		 
 		if (!empty($user)) {
 			$hashedpassword = md5($password);
 			if ($hashedpassword == $user->password) {
@@ -37,4 +38,5 @@ class UserIdentity extends CUserIdentity
 		
 		return !$this->errorCode;
 	}
+	
 }
