@@ -222,3 +222,17 @@ ul.alert-dropdown {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+table.table, table th, table td{
+    color: #fff;
+}
+div#container {
+width: 90%;
+margin: 0 auto;
+color: #fff;
+}
+div#container legend{
+    color: #fff;
+}
+div#container .form-control{
+    width: auto;
+}
