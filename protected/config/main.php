@@ -33,6 +33,10 @@ return array(
 
 	// application components
 	'components'=>array(
+		'session' => array(
+	      'class' => 'CDbHttpSession',
+	      'timeout' => 100,
+	   ),
 		
         'user'=>array(
             'allowAutoLogin' => true,
